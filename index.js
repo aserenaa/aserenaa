@@ -1,5 +1,4 @@
 import { promises as fs } from 'fs'
-import { join } from 'path'
 import Parser from 'rss-parser'
 
 const MAX_NUMBER_OF_ITEMS = {
@@ -29,9 +28,8 @@ const getDayName = () => {
     getDayName()
   ])
 
-  const latestArticlesList = latestArticles.map(({ title, link, contentSnippet }) => {
-    return `<li><a href="${link}"><b>${title}</b></a><br><i>${contentSnippet}</i></li>`
-  }, join('\n\t'))
+  const latestArticlesList = latestArticles.map(({ title, link, contentSnippet }) => 
+    `<li><a href="${link}"><b>${title}</b></a><br><i>${contentSnippet}</i></li>`).join('\n\t')
 
   const newReadme = template
     .replace(PLACEHOLDERS.LATEST_ARTICLES, latestArticlesList)
