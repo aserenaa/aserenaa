@@ -35,5 +35,10 @@ const getDayName = () => {
     .replace(PLACEHOLDERS.LATEST_ARTICLES, latestArticlesList)
     .replace(PLACEHOLDERS.DAY_NAME, dayName)
 
-  await fs.writeFile('README.md', newReadme)
+    if (newReadme !== await fs.readFile('./README.md', { encoding: 'utf8' })) {
+      await fs.writeFile('./README.md', newReadme)
+      console.log('README updated!')
+    } else {
+      console.log('No changes were made to the README.')
+    }
 })()
