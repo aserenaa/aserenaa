@@ -27,5 +27,9 @@ jobs:
         git config --global user.name aserenaa
         git config --global user.email abraham.serena@hotmail.com
         git add README.md
-        git diff --quiet && git diff --staged --quiet || git commit -m "[bot] Update README with latest info"
-        git push origin main
+        if git diff --quiet && git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "[bot] Update README with latest info"
+          git push origin main
+        fi
