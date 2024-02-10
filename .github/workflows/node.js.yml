@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
     
   schedule:
-      - cron: "30 5,17 * * *"
+    - cron: "30 5 * * *"  # Runs at 05:30 UTC every day
 
 jobs:
   build:
