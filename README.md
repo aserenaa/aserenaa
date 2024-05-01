@@ -37,5 +37,5 @@
 <br />
 
 <p align="center">
-  <i>📅 Have a nice Monday !!</i>
+  <i>📅 Have a nice Wednesday !!</i>
 </p>
