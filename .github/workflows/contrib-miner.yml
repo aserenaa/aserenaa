@@ -2,7 +2,7 @@ name: Contrib miner
 
 on:
   schedule:
-    - cron: "17 3 * * *" # daily
+    - cron: "17 3 * * 1" # weekly, Mondays 03:17 UTC
   workflow_dispatch:
 
 permissions:
