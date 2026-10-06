@@ -16,6 +16,9 @@ just doing it by hand. Next time it'll be faster 😉
 
 <p align="center">
   <a href="https://github.com/aserenaa/contrib-miner">
-    <img src="https://raw.githubusercontent.com/aserenaa/aserenaa/output/miner.gif" alt="An 8-bit miner digging up my GitHub contributions from the last year" width="864">
+    <picture>
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aserenaa/aserenaa/output/miner-light.gif">
+      <img src="https://raw.githubusercontent.com/aserenaa/aserenaa/output/miner.gif" alt="An 8-bit miner digging up my GitHub contributions from the last year" width="864">
+    </picture>
   </a>
 </p>
